@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:paddingTop="15dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/marshmallow_image"
+        android:layout_width="@dimen/marsmallow_width"
+        android:layout_height="@dimen/marsmallow_height"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/marshmallow" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_toRightOf="@id/marshmallow_image">
+
+        <TextView
+            android:id="@+id/marshmallow_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="I Love Marshmallow"
+            android:textColor="@color/colorAccent"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/like_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="likeClicked"
+            android:text="Like" />
+
+        <TextView
+            android:id="@+id/likes_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/like_button"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:text="2 likes"
+            android:textColor="@color/colorPrimaryDark" />
+    </RelativeLayout>
+
+</RelativeLayout>

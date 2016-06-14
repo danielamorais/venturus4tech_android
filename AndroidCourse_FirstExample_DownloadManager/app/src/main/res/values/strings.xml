@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Venturus</string>
+    <string name="like_counter">%1$d likes</string>
+    <string name="download_text">marshmallow_big.jpg</string>
+    <string name="download_completed_text">Imagem baixada</string>
+
+    <string name="permission_denied_text">A permissão para gravar imagem foi negada</string>
+    <string name="permission_explanation_text">Permissão para salvar imagem</string>
+
+
+</resources>
